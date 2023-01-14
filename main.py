@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request
-from fastapi.response import JSONResponse
+from starlette.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from routers import route_todo, route_auth
 from schemas import SuccessMsg, CsrfSettings
